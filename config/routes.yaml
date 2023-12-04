@@ -1,3 +1,28 @@
 app_homepage:
     path: /
     controller: App\Controller\DefaultController::index
+
+a_propos:
+    path: /a-propos
+    controller: App\Controller\AProposController::index
+
+cours:
+    path: /cours
+    controller: App\Controller\CoursController::index
+
+newsletter:
+    path: /newsletter
+    controller: App\Controller\NewsletterController::index
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
+
+inscription:
+    path: /inscription
+    controller: App\Controller\InscriptionController::index
+
+connexion:
+    path: /connexion
+    controller: App\Controller\ConnexionController::index
+
