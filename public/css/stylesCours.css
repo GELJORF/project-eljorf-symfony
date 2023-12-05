@@ -22,11 +22,11 @@ h1 {
 }
 
 h2 {
-    color: #555; /* Couleur des sous-titres */
+    color: rgb(10, 56, 136); /* Couleur des sous-titres */
 }
 
 p {
-    color: #333; /* Couleur du texte */
+    color: #570000; /* Couleur du texte */
     margin-bottom: 10px; /* Marge en bas de chaque paragraphe */
 }
 
@@ -42,7 +42,7 @@ li {
     width: auto; /* Largeur fixe pour chaque carré */
     height: auto; /* Hauteur fixe pour chaque carré */
     padding: 15px; /* Remplissage de chaque élément de la liste */
-    background: linear-gradient(to right, #ecf0f1, #bdc3c7); /* Couleur de fond en dégradé */
+    background: linear-gradient(to right, #ecf0f1, #5ea8da); /* Couleur de fond en dégradé */
     border-radius: 5px; /* Bords arrondis */
     text-align: center; /* Centrer le texte */
 }
