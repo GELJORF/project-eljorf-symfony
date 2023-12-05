@@ -55,13 +55,23 @@ nav a:hover {
 
 /* Ajout du style pour le block title */
 .title-block {
-    color: #fcfcfc; /* Couleur du texte */
+    color: #3f3206; /* Couleur du texte */
     font-size: 36px; /* Taille de la police */
-    font-weight: bold; /* Gras */
-    font-family: 'Arial', sans-serif; /* Police de caractères */
+    font-weight: bolder; /* Gras */
+    font-family: 'Pacifico', cursive; /* Police de caractères avec un style particulier */
     text-align: center; /* Centrer le texte */
     margin: 20px; /* Marge autour du titre */
     padding: 20px; /* Remplissage interne du titre */
     line-height: 1.4; /* Hauteur de ligne pour centrer verticalement */
     display: inline-block; /* Ajuste la largeur du cadre à la largeur du texte */
+    text-shadow: 2px 2px 4px rgba(34, 56, 50, 0.5); /* Ombre du texte */
+    background: linear-gradient(to right, #fcc500, #ff6361); /* Dégradé de couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    transition: transform 0.3s ease-in-out; /* Animation de transition */
 }
+
+.title-block:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
