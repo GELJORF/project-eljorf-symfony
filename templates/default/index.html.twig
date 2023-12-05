@@ -1,28 +1,25 @@
-{# templates/default/index.html.twig #}
-
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    <div class="title-block">Bienvenue à la plateforme d'apprentissage de la langue arabe aux étrangers (ALE) !</div>
+    ALE (Arabe Langue Étrangère)
 {% endblock %}
 
 {% block body %}
+    <nav>
+        <div class="navbar-image">
+            <img src="{{ asset('images/2.jpg') }}" alt="Image description">
+        </div>
 
-<nav>
-    <ul>
-        {% for label, url in menu %}
-            <li><a href="{{ url }}">{{ label }}</a></li>
-        {% endfor %}
-    </ul>
+        <div class="title-block">
+            {{ block('title') }} {# Use the title block directly #}
+        </div>
 
-    <div class="navbar-image">
-        <img src="{{ asset('images/2.jpg') }}" alt="Description de l'image">
-    </div>
-</nav>
-
-<div class="example-wrapper">
-    <h1>Pourquoi apprendre l'arabe ?</h1>
-    <!-- ... (contenu spécifique de la page d'accueil) -->
-</div>
-
+        <ul>
+            {% for label, url in menu %}
+                <li>
+                    <a href="{{ url }}">{{ label }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
 {% endblock %}

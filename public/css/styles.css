@@ -1,9 +1,7 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../images/3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +11,7 @@ nav {
     background-color: rgb(17, 105, 143);
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 20px;
     margin: 30px;
@@ -57,14 +55,13 @@ nav a:hover {
 
 /* Ajout du style pour le block title */
 .title-block {
-    color: #600322; 
-    font-size: 30px; 
-    font-weight: bolder;
-    margin: 30px;
-    padding: 30px;
-    text-align: center;
-    line-height: 1.4; /* Ajuste la hauteur de ligne pour centrer verticalement */
-    border: 2px solid #fff; /* Ajoute une bordure blanche de 2 pixels */
-    background-color: #fff; /* Ajoute une couleur de fond blanche */
-    display: inline-block; /* Pour que le cadre de la bordure s'ajuste à la largeur du texte */
+    color: #fcfcfc; /* Couleur du texte */
+    font-size: 36px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    text-align: center; /* Centrer le texte */
+    margin: 20px; /* Marge autour du titre */
+    padding: 20px; /* Remplissage interne du titre */
+    line-height: 1.4; /* Hauteur de ligne pour centrer verticalement */
+    display: inline-block; /* Ajuste la largeur du cadre à la largeur du texte */
 }

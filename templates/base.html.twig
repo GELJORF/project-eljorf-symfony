@@ -1,11 +1,9 @@
-{# templates/base.html.twig #}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    {% block title %}Titre{% endblock %}
-    <link rel="stylesheet" href="{{ asset('styles.css') }}">
-    <!-- ... (autres balises head) -->
+    <title>{% block title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body>
     {% block body %}{% endblock %}
