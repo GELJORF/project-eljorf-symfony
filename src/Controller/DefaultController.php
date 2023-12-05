@@ -1,7 +1,8 @@
-<?php
+<?php 
 
 namespace App\Controller;
 
+use App\Repository\AlphabetRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -9,12 +10,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class DefaultController extends AbstractController
 {
     #[Route('/', name: 'homepage')]
-    public function index(): Response
+    public function index(AlphabetRepository $alphabetRepository): Response
     {
+        $lessons = $alphabetRepository->findAllLessonsWithContent();
+
         return $this->render('default/index.html.twig', [
             'menu' => $this->getMenu(),
+            'lessons' => $lessons,
         ]);
-}
+    }
+
     private function getMenu(): array
     {
         return [

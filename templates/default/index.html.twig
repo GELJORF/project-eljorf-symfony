@@ -1,23 +1,25 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    ALE (Arabe Langue Étrangère)
+	ALE (Arabe Langue Étrangère)
 {% endblock %}
 
 {% block body %}
-    <nav>
+	<nav>
+		<div class="title-block">
+			{{ block('title') }}
+		</div>
 
+		<ul>
+			{% for label, url in menu %}
+				<li>
+					<a href="{{ url }}">{{ label }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
 
-        <div class="title-block">
-            {{ block('title') }} {# Use the title block directly #}
-        </div>
-
-        <ul>
-            {% for label, url in menu %}
-                <li>
-                    <a href="{{ url }}">{{ label }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
+	<div class="example-wrapper">
+		<h1>Pourquoi apprendre l'arabe ?</h1>
+	</div>
 {% endblock %}

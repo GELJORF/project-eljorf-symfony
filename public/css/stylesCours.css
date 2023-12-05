@@ -1,50 +1,48 @@
-/* public/css/styles.css */
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2; /* Couleur de fond de la page */
+    background-color: #f2f2f2; 
 }
 
 .container {
-    max-width: 800px; /* Largeur maximale du contenu */
-    margin: 0 auto; /* Centrer le contenu */
+    max-width: 800px;
+    margin: 0 auto; 
     padding: 20px;
 }
 
 h1 {
-    color: #3498db; /* Couleur du titre principal (bleu clair) */
-    font-size: 36px; /* Taille de police plus grande */
-    margin-bottom: 20px; /* Marge en bas du titre */
-    padding: 10px; /* Remplissage du titre */
-    text-align: center; /* Centrer le texte */
+    color: #3498db;
+    font-size: 36px;
+    margin-bottom: 20px; 
+    padding: 10px; 
+    text-align: center;
 }
 
 h2 {
-    color: rgb(10, 56, 136); /* Couleur des sous-titres */
+    color: rgb(10, 56, 136);
 }
 
 p {
-    color: #570000; /* Couleur du texte */
-    margin-bottom: 10px; /* Marge en bas de chaque paragraphe */
+    color: #570000; 
+    margin-bottom: 10px; 
 }
 
 ul {
-    list-style: none; /* Supprimer les puces de la liste */
+    list-style: none;
     padding: 0;
 }
 
 li {
     margin-left: 70px;
     margin-right: 70px;
-    margin-bottom: 20px; /* Marge entre chaque élément de la liste */
-    width: auto; /* Largeur fixe pour chaque carré */
-    height: auto; /* Hauteur fixe pour chaque carré */
-    padding: 15px; /* Remplissage de chaque élément de la liste */
-    background: linear-gradient(to right, #ecf0f1, #5ea8da); /* Couleur de fond en dégradé */
-    border-radius: 5px; /* Bords arrondis */
-    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px; 
+    width: auto; 
+    height: auto; 
+    padding: 15px; 
+    background: linear-gradient(to right, #ecf0f1, #5ea8da); 
+    border-radius: 5px; 
+    text-align: center; 
 }
 
-/* Ajoutez d'autres styles selon vos préférences */
