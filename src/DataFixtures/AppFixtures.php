@@ -15,8 +15,9 @@ class AppFixtures extends Fixture
 
         $newLesson = new Alphabet();
         $newLesson
-            ->setTitle($faker->sentence)
-            ->setContent($faker->paragraphs(3, true));
+            ->setTitle($faker->sentence('worried baby')) /* phrase générée par Random Everything*/
+            ->setContent($faker->paragraphs(('again thread above applied number rays handsome attempt grandmother cookies fear are copy indeed pie paragraph cabin lesson home valley stairs fewer her former'), true)); 
+            /* texte généré par Random Everything*/
 
         $manager->persist($newLesson);
         $manager->flush();
