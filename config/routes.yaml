@@ -26,3 +26,11 @@ connexion:
     path: /connexion
     controller: App\Controller\ConnexionController::index
 
+app_newsletter:
+    path: /newsletter
+    controller: App\Controller\NewsletterController::index
+
+newsletter_confirmation:
+    path: /newsletter/confirmation
+    controller: App\Controller\NewsletterController::confirmation
+
