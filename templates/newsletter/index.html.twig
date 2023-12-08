@@ -1,18 +1,16 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}
+{# {% block title %}
 	Inscription à la Newsletter
-{% endblock %}
+{% endblock %} #}
 
 {% block stylesheets %}
-	
+
 	<link rel="stylesheet" href="{{ asset('css/styleNewsletter.css') }}">
 {% endblock %}
 
 
 {% block body %}
-	<h1>Inscription à la Newsletter</h1>
 
+	<h1>Inscription à la Newsletter</h1>
 	{{ form_start(form) }}
 	{{ form_row(form.email) }}
 	{{ form_row(form.submit) }}
