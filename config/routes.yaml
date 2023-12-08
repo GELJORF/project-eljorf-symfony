@@ -34,3 +34,7 @@ newsletter_confirmation:
     path: /newsletter/confirmation
     controller: App\Controller\NewsletterController::confirmation
 
+app_contact_confirmation:
+    path: '/contact/confirmation'
+    controller: App\Controller\ContactController::confirmation
+
