@@ -1,0 +1,9 @@
+<footer>
+    <ul class="footer-links">
+        {% for label, url in footerLinks %}
+            <li class="footer-link">
+                <a href="{{ url }}">{{ label }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</footer>

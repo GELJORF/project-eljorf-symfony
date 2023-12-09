@@ -1,0 +1,47 @@
+/* Footer général */
+footer {
+    background-color: rgb(17, 105, 143);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Liens dans le footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    margin-right: 10px; /* Ajustez la marge pour un espacement plus étroit entre les liens */
+    display: inline-block;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-link a:hover {
+    color: #ffc107;
+}
+
+/* Media Query pour les écrans de petite taille (< 600px) */
+@media only screen and (max-width: 600px) {
+    /* Ajustements pour les écrans de petite taille */
+
+    body {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-link {
+        margin-right: 5px; /* Réduisez la marge pour un espacement plus étroit entre les liens */
+    }
+}

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Controller;
 
@@ -14,8 +14,11 @@ class DefaultController extends AbstractController
     {
         $lessons = $alphabetRepository->findAllLessonsWithContent();
 
+        $footerLinks = $this->getFooter();
+
         return $this->render('default/index.html.twig', [
             'menu' => $this->getMenu(),
+            'footerLinks' => $footerLinks,
             'lessons' => $lessons,
         ]);
     }
@@ -30,6 +33,15 @@ class DefaultController extends AbstractController
             'Contact' => $this->generateUrl('contact'),
             'Inscription' => $this->generateUrl('inscription'),
             'Connexion' => $this->generateUrl('connexion'),
+        ];
+    }
+
+    private function getFooter(): array
+    {
+        return [
+            'Politique de confidentialité' => '#',
+            'Conditions d\'utilisation' => '#',
+            'Plan du site' => '#',
         ];
     }
 }

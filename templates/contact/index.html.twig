@@ -1,14 +1,16 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Contact{% endblock %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('css/styleContact.css')}}">
+{% endblock %}
 
 {% block body %}
-    <h1>Contactez-nous</h1>
+    <h1>Contactez-nous !</h1>
 
-    {{ form_start(form) }}
-    {{ form_row(form.name) }}
-    {{ form_row(form.email) }}
-    {{ form_row(form.message) }}
-    {{ form_row(form.submit) }}
-    {{ form_end(form) }}
+    <div class="contact-form">
+        {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.message) }}
+        {{ form_row(form.submit) }}
+        {{ form_end(form) }}
+    </div>
 {% endblock %}
