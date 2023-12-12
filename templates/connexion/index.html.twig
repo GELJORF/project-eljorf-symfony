@@ -6,8 +6,11 @@
     <h1>Connexion</h1>
     
     {{ form_start(loginForm) }}
+    {{ form_row(loginForm.username) }}
     {{ form_row(loginForm.email) }}
     {{ form_row(loginForm.password) }}
+
     <button type="submit">Connexion</button>
+
     {{ form_end(loginForm) }}
 {% endblock %}
