@@ -15,14 +15,11 @@ class AppFixtures extends Fixture
 
         $newLesson = new Alphabet();
         $newLesson
-            ->setTitle($faker->sentence('worried baby')) /* phrase générée par Random Everything*/
-            ->setContent($faker->paragraphs(('again thread above applied number rays handsome attempt grandmother cookies fear are copy indeed pie paragraph cabin lesson home valley stairs fewer her former'), true)); 
-            /* texte généré par Random Everything*/
+            ->setTitle($faker->sentence(4))
+            ->setContent(implode("\n\n", $faker->paragraphs(3)))
+            ->setDate($faker->dateTime);
 
         $manager->persist($newLesson);
         $manager->flush();
     }
 }
-
-/** Ceci est un exemple d'utilisation des fixtures (afin de créer un nouveau cours), 
- * celles-ci n'ont pas été rechargées */
