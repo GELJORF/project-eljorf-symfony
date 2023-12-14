@@ -1,6 +1,7 @@
 # Projet Symfony
 
-Nous avons repris, afin de réaliser ce projet, l'idée du projet PHP auparavant présenté, à savoir un site didactique d'apprentissage de langues (à savoir l'arabe). L'objectif est de tenter de reproduire les mêmes fonctionnalités, mais cette fois avec un framework Symfony.
+Nous avons repris, afin de réaliser ce projet, l'idée du projet PHP auparavant présenté, à savoir un site didactique d'apprentissage de langues. L'objectif est de tenter de reproduire les mêmes fonctionnalités, mais cette fois avec un framework Symfony.  
+Bien que nous avions commencé avec la dernière version de Symfony (7.0), des problèmes d'affichage du contenu nous ont contraint à reprendre la version (5.4.33) pour concevoir le site.
 
 ## Intoduction
 
@@ -12,3 +13,16 @@ Ces pages ont été créées en utilisant des controllers. Le menu, lui, a été
 Il en va de soi pour le footer avec la fonction privée `getFooter` qui retourne un tableau contenant le nom des onglets du menu footer, mais sans les liens, car nous n'avons pas créé des controllers pour le footer.
 
 ## Fonctionnalités du site
+
+### Les données de test (fixtures)
+
+Le fichier `AppFixtures.php` permet de créer de créer un contenu de cours (fictif) et de l'intégrer à la base de données, le cours (fictif) sera affiché dans la rubrique "Cours" du site. Évidemment, une entité indépendante (à nommer "Lesson" ou "Cours") devra être créee afin d'afficher, dans l'onglet dédié "Cours", la liste des cours déjà disponiblées et à laquelle les nouveaux inscrits peuvent avoir accès.  
+Le fichier `UserFixture.php` permet d'essayer la fonctionnalité de connexion d'un nouvel utilisateur.
+
+### Contacter le site
+
+Un formulaire de contact a été créé, ainsi que deux méthodes dans le chemin `templates\contact\`, à savoir `index.html.tiwg` pour le formulaire de contact utilisé par le visiteur du site, et `confirmation.html.twig` qui permet d'afficher un message de confirmation de la bonne réception du message envoyé.
+
+### Newsletter
+
+Un formulaire d'inscription au bulletin d'information du site a été créé, qui utilise l'enttié `NewsletterSubscription` ainsi que deux méthode : `templates\newsletter\index.html.twig` pour le formulaire de contact, et `templates\newsletter\emails\confirmation.html.twig` pour l'envoi du message de confirmation de l'inscription.
