@@ -1,5 +1,3 @@
-/* public/css/styleNewsletter.css */
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -20,7 +18,7 @@ form {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* ajout pour inclure le padding et la bordure dans la largeur */
+    box-sizing: border-box;
 }
 
 h1 {

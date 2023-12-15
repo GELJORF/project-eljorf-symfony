@@ -1,7 +1,5 @@
 <?php 
 
-// src/Form/NewsletterFormType.php
-
 namespace App\Form;
 
 use App\Entity\NewsletterSubscription;
