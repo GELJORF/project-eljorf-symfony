@@ -26,3 +26,12 @@ Un formulaire de contact a été créé, ainsi que deux méthodes dans le chemin
 ### Newsletter
 
 Un formulaire d'inscription au bulletin d'information du site a été créé, qui utilise l'enttié `NewsletterSubscription` ainsi que deux méthode : `templates\newsletter\index.html.twig` pour le formulaire de contact, et `templates\newsletter\emails\confirmation.html.twig` pour l'envoi du message de confirmation de l'inscription.
+
+### Inscription
+
+Le contrôleur d'inscription utilise l'entité `User` afin de créer un nouvel utilisateur `new User`, que l'on va "persister" et "flusher", ainsi qu'un formulaire d'inscription. Le mot de passe est haché avec `hashPassword` ; l'inscription réussie est accompagnée par un message "Flash" `success` avant que l'utilisateur ne soit redirigé vers la page d'accueil.
+
+### Connexion
+
+Elle est gérée par `LoginFormAuthenticator` qui gère le processus d'authentification pour les utilisateurs qui se connectent via un formulaire de connexion. `LoginFormAuthenticator` traite les informations de connexion, gère les succès et échecs d'authentification, et redirige les utilisateurs en fonction de ces événements.  
+La connexion ne fonctionne pas encore correctement dans notre application, car lors de la soumission du formulaire, un message "invalid credentials" est affiché.

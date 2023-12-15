@@ -9,9 +9,7 @@ use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-
 use Symfony\Component\Mailer\MailerInterface;
-
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -34,14 +32,11 @@ class NewsletterController extends AbstractController
             $entityManager->persist($subscription);
             $entityManager->flush();
 
-            // Envoyez un e-mail de confirmation
             $this->sendConfirmationEmail($subscription, $mailer);
 
-            // Redirigez l'utilisateur vers une page de confirmation
             return $this->redirectToRoute('newsletter_confirmation');
         }
 
-        // Affichez le formulaire dans le template Twig
         return $this->render('newsletter/index.html.twig', [
             'form' => $form->createView(),
         ]);
@@ -53,7 +48,7 @@ class NewsletterController extends AbstractController
             ->from(new Address('ale@email.com', 'ELJORF'))
             ->to($subscription->getEmail())
             ->subject('Confirmation d\'inscription à la newsletter')
-            ->htmlTemplate('newsletter/emails/confirmation.html.twig')  // Assurez-vous que le chemin est correct
+            ->htmlTemplate('newsletter/emails/confirmation.html.twig')
             ->context([
                 'subscription' => $subscription,
             ]);
